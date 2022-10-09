@@ -1,6 +1,6 @@
-let chart = document.getElementById("stuff")
+// let chart = document.getElementById("stuff")
 
-console.log(chart)
+// console.log(chart)
 
 // window.addEventListener("mouseup", (e) => {
 //     // Let's pick a random color between #000000 and #FFFFFF
@@ -15,6 +15,15 @@ console.log(chart)
 //     // element we actually clicked on
 //     e.target.style.fill = fill;
 // });
+
+var s = Snap("#element");
+console.log(s);
+
+Snap.load("disease_model.svg", onSVGLoaded); 
+
+function onSVGLoaded(svg) {
+    s.append(svg);
+}
 
 window.addEventListener("mouseup", (e) => {
     if (e.srcElement.nodeName == "svg") {
