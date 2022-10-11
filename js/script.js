@@ -22,7 +22,7 @@ console.log(chart);
 Snap.load("disease_model.svg", onSVGLoaded);
 
 function onSVGLoaded(svg) {
-    chart.append(svg);
+    console.log(svg)
 }
 
 // window.addEventListener("mouseup", (e) => {
