@@ -16,10 +16,10 @@
 //     e.target.style.fill = fill;
 // });
 
-var chart = Snap("#element");
+var chart = Snap("#chart");
 console.log(chart);
 
-Snap.load("disease_model.svg", onSVGLoaded); 
+Snap.load("disease_model.svg", onSVGLoaded);
 
 function onSVGLoaded(svg) {
     chart.append(svg);
